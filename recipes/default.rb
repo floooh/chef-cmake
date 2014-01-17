@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: chef-cmake
+# Cookbook Name:: cmake
 # Recipe:: default
 #
 # Copyright (C) 2014 Andre Weissflog
