@@ -1,4 +1,4 @@
-name             'chef-cmake'
+name             'cmake'
 maintainer       'Andre Weissflog'
 maintainer_email 'floooh@gmail.com'
 license          'The MIT License (MIT)'

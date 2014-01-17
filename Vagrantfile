@@ -53,7 +53,7 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[chef-cmake::default]"
+        "recipe[cmake::default]"
     ]
   end
 end
