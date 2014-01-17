@@ -4,14 +4,19 @@ Compile and install a recent cmake version from source tarball.
 
 What happens under the hood:
 
-* makes sure package _build-essentials_ is present
-* download source tarball from http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz to chef's cache /var/chef/cache (specific cmake version can be customized through attributes)
-* ./configure && make && make install
+* this now simply uses the _ark_ cookbook to download, configure, make
+and make-install a cmake source tarball from http://www.cmake.org/files/v2.8/cmake-2.8.12.1.tar.gz
+* the actual cmake version can be configured through attributes
 
 ### Requirements ###
 #### Platform: ####
 
 * Ubuntu/Debian
+
+#### Dependencies ####
+
+* build-essential
+* ark
 
 ### Attributes ###
 #### Default recipe attributes: ####
