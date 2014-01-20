@@ -1,6 +1,6 @@
 ### Description ###
 
-Compile and install a recent cmake version from source tarball.
+This is a Chef cookbook to compile and install a recent cmake version from source tarball.
 
 What happens under the hood:
 
