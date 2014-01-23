@@ -1,3 +1,4 @@
+# encoding: UTF-8
 name             'cmake'
 maintainer       'Andre Weissflog'
 maintainer_email 'floooh@gmail.com'

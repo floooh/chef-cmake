@@ -1,3 +1,4 @@
+# encoding: UTF-8
 #
 # Cookbook Name:: cmake
 # Recipe:: default
@@ -14,8 +15,7 @@ tar_name = "#{name}.tar.gz"
 url   = "#{node['cmake']['url']}/v#{major}/#{tar_name}"
 
 ark 'cmake' do
-    url "#{url}"
-    version "#{major}.#{minor}"
-    action [ :configure, :install_with_make ]
+  url "#{url}"
+  version "#{major}.#{minor}"
+  action [:configure, :install_with_make]
 end
-
