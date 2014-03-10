@@ -14,8 +14,18 @@ name  = "cmake-#{major}.#{minor}"
 tar_name = "#{name}.tar.gz"
 url   = "#{node['cmake']['url']}/v#{major}/#{tar_name}"
 
+# for some reason ark configure + make_and_install doesn't work, so just unpack
 ark 'cmake' do
   url url
-  version "#{major}.#{minor}"
-  action [:configure, :install_with_make]
+  action [ :put ]
 end
+
+bash 'configure_make_install' do
+    cwd '/usr/local/cmake'
+    code <<-EOH
+    ./configure
+    make
+    make install
+    EOH
+end
+
