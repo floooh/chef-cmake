@@ -23,9 +23,7 @@ end
 bash 'configure_make_install' do
     cwd '/usr/local/cmake'
     code <<-EOH
-    ./configure
-    make
-    make install
+    ./bootstrap && make && make install
     EOH
 end
 
